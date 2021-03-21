@@ -1,0 +1,109 @@
+.pricing-plan {
+  background-color: #0f171a;
+  padding: 50px;
+}
+
+.pricing-plan-header {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pricing-plan-paragraph {
+  font-size: 20px;
+  color: grey;
+  text-align: center;
+}
+
+.price-types {
+  background-color: #223238;
+  width: 350px;
+  height: 630px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.price-types > p {
+  font-size: 20px;
+  color: lightgrey;
+}
+
+.free-trial-button {
+  background-color: #00edbc;
+  font-size: 15px;
+  padding: 10px;
+  height: 50px;
+  width: 220px;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.type {
+  color: white !important;
+  font-weight: bold;
+  font-size: 35px !important;
+}
+
+.money-weight {
+  color: #00edbc !important;
+  font-weight: bold;
+  font-size: 40px !important;
+}
+
+.free-trial-button:hover {
+  color: white;
+}
+
+.price-types-container {
+  padding: 50px;
+}
+
+.prices {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 760px) {
+  .price-types {
+    height: auto;
+    width: 80%;
+    padding: 10px;
+  }
+
+  .prices {
+    width: auto;
+  }
+
+  .free-trial-button {
+    width: 130px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .prices {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .price-types {
+    width: 100%;
+  }
+}
